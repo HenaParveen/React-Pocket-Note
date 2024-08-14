@@ -23,7 +23,7 @@ export const noteSlice = createSlice({
         .slice(0, 2);
 
       const newGroup = state.groups;
-      newGroup.push({
+      newGroup.unshift({
         id: Date.now(),
         groupName: groupName.trim(),
         groupShortName: shortName,
